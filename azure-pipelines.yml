@@ -37,7 +37,7 @@ stages:
         packageForLinux: '$(build.artifactStagingDirectory)/**/*.zip'
     - task: PublishBuildArtifacts@1
       inputs:
-        PathtoPublish: '$(System.DefaultWorkingDirectory)/TestProject/bin/Release/**'
+        PathtoPublish: '$(System.DefaultWorkingDirectory)/**/TestProject/bin/Release/*.*'
         ArtifactName: 'tests'
         publishLocation: 'Container'
 - stage: Test
