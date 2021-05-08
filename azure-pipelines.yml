@@ -34,7 +34,7 @@ stages:
         azureSubscription: 'VS Sub'
         appType: 'webApp'
         WebAppName: 'SeleniumTest222'
-        packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+        packageForLinux: '$(System.DefaultWorkingDirectory)/SeleniumMulti.zip'
     - task: PublishBuildArtifacts@1
       inputs:
         PathtoPublish: '$(System.DefaultWorkingDirectory)/TestProject/bin/Release/**'
